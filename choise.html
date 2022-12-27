@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperMarket</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./stylesheets/all.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#"> <i class="bi bi-cart-fill text-success me-2"></i> SuperMarket</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" aria-current="page" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="index.html">服務介紹</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="index.html">產品組合</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="qa.html">常見問題</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-success " href="#">選購商品</a>
+                    </li>
+            </div>
+        </div>
+    </nav>
+    <header class="mb-5 py-5 text-center bg-img">
+        <p class="fs-4  text-success">go shopping</p>
+        <h1 class="fw-bold">選購商品</h1>
+        </div>
+    </header>
+
+    <div class="container mb-5">
+        <div class="row justify-content-center">
+            <div class=" col-lg-8">
+                <form action="" class="p-lg-5 shadow-lg">
+                    <div class="mb-5">
+                        <h2 class="deco-line mb-3">選購商品</h2>
+                        <div class="row row-cols-1 row-cols-3  ">
+                            <div class="col"><button type="button"
+                                    class="btn btn-lg btn-outline-success w-100 py-3 text-dark">烤肉組合
+                                    <br class="d-none d-lg-block">NT$799/組</button></div>
+                            <div class="col"><button type="button"
+                                    class="btn btn-lg btn-outline-success w-100 py-3 text-dark">火鍋組合
+                                    <br class="d-none d-lg-block">NT$799/組</button></div>
+                            <div class="col"><button type="button"
+                                    class="btn btn-lg btn-outline-success active w-100 py-3 btn-special">客製化組合
+                                    <br class="d-none d-lg-block">客服詢價</button></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="deco-line mb-3">填寫資料</h2>
+                        <div class="row row-cols-1 g-3 g-lg-4">
+                            <div class="col-lg-6">
+                                <label for="name" class="form-label">名字</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="col-lg-6"> <label for="lastName" class="form-label">姓氏</label>
+                                <input type="text" class="form-control" id="lastName">
+                            </div>
+                            <div class="col">
+                                <label for="phone" class="form-label">手機號碼</label>
+                                <input type="number" class="form-control" id="phone">
+                            </div>
+                            <div class="col">
+                                <label for="email" class="form-label">電子郵件</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="col">
+                                <label for="address" class="form-label">住址</label>
+                                <input type="text" class="form-control" id="address">
+                            </div>
+                            <div class="col">
+                                <label for="time" class="form-label">方便聯繫時間</label>
+                                <select class="form-select" aria-label="Default select example" id="time">
+                                    <option>7:00-10:00</option>
+                                    <option>10:00-13:00</option>
+                                    <option selected>13:00-17:00</option>
+                                    <option>17:00-20:00</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <h3 class="fs-6">加購商品</h3>
+                                <input class="form-check-input" type="checkbox" value="" id="beef">
+                                <label for="beef" class="form-label">牛小排</label>
+                                <input class="form-check-input ms-2" type="checkbox" value="" id="pork">
+                                <label for="pork" class="form-label">梅花豬</label>
+                                <input class="form-check-input ms-2" type="checkbox" value="" id="vegetable">
+                                <label for="vegetable" class="form-label">蔬菜組合</label>
+                            </div>
+                            <div class="col">
+                                <label for="pay" class="form-label">付款方式</label>
+                                <select class="form-select" aria-label="Default select example" id="pay">
+                                    <option>信用卡</option>
+                                    <option selected>貨到付款</option>
+                                </select>
+                            </div>
+                            <div class="col mb-5">
+                                <label for="text" class="form-label">備註說明</label>
+                                <textarea id="text" class="form-control w-100 h-100"></textarea>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-success w-100 text-dark" type="button">選購商品</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <div class=" bg-light">
+        <div class="container  p-5">
+            <h2 class="text-center mb-4">需要其他協助嗎?</h2>
+            <div class="row row-cols-1 row-cols-lg-3  g-3 g-lg-4">
+                <div class="col">
+                    <div class="card border-0 shadow">
+                        <div class="card-body py-4 text-center fs-4">
+                            <a href="#" class="text-decoration-none link-dark"> <i
+                                    class="bi bi-telephone-fill text-success me-2"></i>07-555-666</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow">
+                        <div class="card-body py-4 text-center fs-4">
+                            <a href="#" class="text-decoration-none link-dark"> <i
+                                    class="bi bi-facebook text-success me-2"></i>
+                                SuperMarket</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow">
+                        <div class="card-body py-4 text-center fs-4">
+                            <a href="#" class="text-decoration-none link-dark"> <i
+                                    class="bi bi-question-lg  text-success me-2"></i>常見問題 </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer py-4 bg-secondary text-center text-white">
+        Copyright © 2022 SuperMarket.All rights reserved.
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
