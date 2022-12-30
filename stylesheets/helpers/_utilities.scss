@@ -438,7 +438,9 @@ $utilities: map-merge(( // scss-docs-start utils-vertical-align
       "object-fit": (property: object-fit,
         class: object-fit,
         values:cover),
-      // scss-docs-end utils-visibility
+      "list-style-type": (property: list-style-type,
+        class: list-style,
+        values:none) // scss-docs-end utils-visibility
     ),
     $utilities
 );

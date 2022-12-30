@@ -9242,6 +9242,10 @@ textarea.form-control-lg {
      object-fit: cover !important;
 }
 
+.list-style-none {
+  list-style-type: none !important;
+}
+
 @media (min-width: 576px) {
   .float-sm-start {
     float: left !important;
